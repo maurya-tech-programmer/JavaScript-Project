@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <!-- link icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- link tailwind css cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="preview"
+      class="w-full h-[500px] relative"
+      style="background: url(images/1.jpg); background-size: cover"
+    >
+      <button onclick="prev()"
+        class="hover:shadow-lg hover:scale-110 bg-white w-12 h-16 text-black text-2xl absolute top-1/2 transform -translate-y-1/2 left-0 rounded-r transition delay-150 duration-300"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button onclick="next()"
+        class="hover:shadow-lg hover:scale-110 bg-white w-12 h-16 text-black text-2xl absolute top-1/2 transform -translate-y-1/2 right-0 rounded-r transition delay-150 duration-300"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <div id="counter" class="bg-white w-[100px] py-1 absolute bottom-3 left-1/2 transform -translate-x-1/2 rounded-full text-center">
+        1/4
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
